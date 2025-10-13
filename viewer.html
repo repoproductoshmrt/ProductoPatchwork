@@ -82,7 +82,7 @@
       ? (/^https?:\/\//i.test(fileParam) ? fileParam : new URL(fileParam,location.href).toString())
       : null;
 
-    const title=q.get("title")||"Usa los botones + y – para ajustar el zoom del documento (o con tus dedos si estás en el móvil)";
+    const title=q.get("title")||"Usa los botones + y – para ajustar el zoom del documento";
     const DPR=Math.min(window.devicePixelRatio||1.25,2);
     const wrap=document.getElementById("viewport");
     const pages=document.getElementById("pages");
